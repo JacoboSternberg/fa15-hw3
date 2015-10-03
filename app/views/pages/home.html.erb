@@ -1,0 +1,40 @@
+<h1> Home <h1>
+<table>                         
+  <tr>                          
+    <th>tasks</th>
+    <th>finished</th>
+  </tr>
+<% @print_todo.each do |print_todo| %>
+  <tr>
+    <td><%= print_todo.tasks %></td>  
+    <td><%= print_todo.finished %></td> 
+  </tr>
+<% end %>
+</table> 
+
+<table>                         
+  <tr>                          
+    <th>name</th>
+  </tr>
+<% @print_cats.each do |print_cats| %>
+  <tr>
+    <td><%= print_cats.name %></td>  
+  </tr>
+<% end %>
+</table>
+
+<table>                         
+  <tr>                          
+    <th>username</th>
+    <th>email</th>
+    <th>age</th>
+  </tr>
+<% @print_users.each do |print_users| %>
+  <tr>
+    <td><%= print_users.username %></td>  
+    <td><%= print_users.email %></td> 
+    <td><%= print_users.age%></td>
+  </tr>
+<% end %>
+</table>
+
